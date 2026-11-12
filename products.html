@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clearly Kind | Skincare Store</title>
+
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>Clearly Kind</h1>
+        <p>Kind skincare. Naturally you.</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="welcome">
+            <h2>Discover Your Glow</h2>
+            <p>Explore our collection of skincare essentials.</p>
+        </section>
+
+        <!-- Product Search -->
+        <section class="catalogue">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for skincare products..."
+            >
+
+            <!-- Product Categories -->
+            <div class="filters">
+                <button data-filter="all">All Products</button>
+                <button data-filter="cleanser">Cleansers</button>
+                <button data-filter="serum">Serums</button>
+                <button data-filter="moisturizer">Moisturizers</button>
+                <button data-filter="sunscreen">Sunscreens</button>
+            </div>
+
+            <!-- Product Cards -->
+            <section class="product-grid" id="productGrid">
+
+                <div class="product-card" data-category="cleanser">
+                    <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?w=500" alt="Facial cleanser">
+                    <h3>Gentle Facial Cleanser</h3>
+                    <p>For your everyday cleansing routine.</p>
+                    <p class="price">KSh 1,200</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="serum">
+                    <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=500" alt="Vitamin scriplyC serum">
+                    <h3>Vitamin C Serum</h3>
+                    <p>A lightweight skincare serum.</p>
+                    <p class="price">KSh 1,800</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="moisturizer">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500" alt="Daily moisturizer">
+                    <h3>Daily Moisturizer</h3>
+                    <p>Helps keep your skin moisturized.</p>
+                    <p class="price">KSh 1,500</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="sunscreen">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500" alt="Sunscreen">
+                    <h3>Daily Sunscreen SPF 50</h3>
+                    <p>Everyday sun protection.</p>
+                    <p class="price">KSh 2,000</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="cleanser">
+                    <img src="https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=500" alt="Foaming face wash">
+                    <h3>Foaming Face Wash</h3>
+                    <p>Gentle daily face wash.</p>
+                    <p class="price">KSh 950</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="serum">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500" alt="Hydrating serum">
+                    <h3>Hyaluronic Acid Serum</h3>
+                    <p>A hydrating skincare serum.</p>
+                    <p class="price">KSh 1,600</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="moisturizer">
+                    <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=500" alt="Face cream">
+                    <h3>Hydrating Face Cream</h3>
+                    <p>Daily moisture for your skin.</p>
+                    <p class="price">KSh 1,350</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="sunscreen">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500" alt="Sun protection">
+                    <h3>Lightweight Sun Care</h3>
+                    <p>Lightweight everyday sun care.</p>
+                    <p class="price">KSh 1,750</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="serum">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500" alt="Niacinamide serum">
+                    <h3>Niacinamide Serum</h3>
+                    <p>A simple addition to your routine.</p>
+                    <p class="price">KSh 1,400</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="cleanser">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500" alt="Cleansing balm">
+                    <h3>Gentle Cleansing Balm</h3>
+                    <p>For your evening cleansing routine.</p>
+                    <p class="price">KSh 1,250</p>
+                    <button>Add to Cart</button>
+                </div>
+
+            </section>
+        </section>
+
+        <!-- HTML Product Table -->
+        <section class="price-list">
+
+            <h2>Our Product Price List</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th colspan="3">Clearly Kind Catalogue</th>
+                    </tr>
+
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Facial Cleanser</td>
+                        <td rowspan="2">Cleansing</td>
+                        <td>KSh 1,200</td>
+                    </tr>
+
+                    <tr>
+                        <td>Foaming Face Wash</td>
+                        <td>KSh 950</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vitamin C Serum</td>
+                        <td rowspan="3">Serums</td>
+                        <td>KSh 1,800</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hyaluronic Acid Serum</td>
+                        <td>KSh 1,600</td>
+                    </tr>
+
+                    <tr>
+                        <td>Niacinamide Serum</td>
+                        <td>KSh 1,400</td>
+                    </tr>
+
+                    <tr>
+                        <td>Daily Moisturizer</td>
+                        <td rowspan="2">Moisturizers</td>
+                        <td>KSh 1,500</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hydrating Face Cream</td>
+                        <td>KSh 1,350</td>
+                    </tr>
+
+                    <tr>
+                        <td>Daily Sunscreen SPF 50</td>
+                        <td rowspan="2">Sunscreens</td>
+                        <td>KSh 2,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lightweight Sun Care</td>
+                        <td>KSh 1,750</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gentle Cleansing Balm</td>
+                        <td>Cleansing</td>
+                        <td>KSh 1,250</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total of all products</td>
+                        <td>KSh 14,800</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Clearly Kind</h3>
+        <p>Thank you for choosing us.</p>
+        <p>&copy; 2026 Clearly Kind. All rights reserved.</p>
+    </footer>
+
+    <script src="products.js"></script>
+
+</body>
+</html>

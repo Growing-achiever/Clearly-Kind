@@ -1,0 +1,43 @@
+
+const searchInput = document.getElementById("searchInput");
+const products = document.querySelectorAll(".product-card");
+const filterButtons = document.querySelectorAll(".filters button");
+
+function filterProducts() {
+    const searchText = searchInput.value.trim().toLowerCase();
+
+    products.forEach(product => {
+        const productName = product.querySelector("h3").textContent.toLowerCase();
+        const matchesSearch = productName.includes(searchText);
+
+        product.style.display = matchesSearch ? "" : "none";
+    });
+}
+
+searchInput.addEventListener("input", filterProducts);
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        const category = this.dataset.filter;
+
+        products.forEach(product => {
+            const matchesCategory =
+                category === "all" || product.dataset.category === category;
+
+            const matchesSearch = product.querySelector("h3").textContent
+                .toLowerCase()
+                .includes(searchInput.value.trim().toLowerCase());
+
+            product.style.display =
+                matchesCategory && matchesSearch ? "" : "none";
+        });
+    });
+});
+document.querySelectorAll(".product-card button").forEach(button => {
+    button.addEventListener("click", function() {
+        const product = this.closest(".product-card");
+        const productName = product.querySelector("h3").textContent;
+
+        alert(productName + " added to your cart!");
+    });
+});
